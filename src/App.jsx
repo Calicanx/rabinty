@@ -1,4 +1,4 @@
-import Portfolio from './portfolio.jsx'
+import Portfolio from './Portfolio.jsx'
 function App() {
 
   return (
