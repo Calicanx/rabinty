@@ -175,13 +175,13 @@ export default function Portfolio () {
           <div className="frame-179">
             <div className="ellipse-30"></div>
 
-            <div className="ellipse-28"></div>
+            <div className="ellipse-30"></div>
 
-            <div className="ellipse-29"></div>
+            <div className="ellipse-30"></div>
 
-            <div className="ellipse-31"></div>
+            <div className="ellipse-30"></div>
 
-            <div className="ellipse-32"></div>
+            <div className="ellipse-30"></div>
           </div>
 
           <img className="rectangle-90" src={next} />
