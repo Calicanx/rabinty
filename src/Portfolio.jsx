@@ -95,8 +95,7 @@ export default function Portfolio () {
             </div>
 
             <div className="for-a-more-detailed-overview-please-feel-free-to-check-the-tools-that-we">
-              For a more detailed overview, please feel free to check the tools
-              that we
+              Our prices are fair and can be adjusted to suit your specific requirements.
             </div>
           </div>
         </div>
@@ -110,8 +109,7 @@ export default function Portfolio () {
             </div>
 
             <div className="for-a-more-detailed-overview-please-feel-free-to-check-the-tools-that-we">
-              For a more detailed overview, please feel free to check the tools
-              that we
+              Unlocking creativity through insightful discussions that enrich ideas and foster collaboration.
             </div>
           </div>
         </div>
@@ -125,8 +123,7 @@ export default function Portfolio () {
             </div>
 
             <div className="for-a-more-detailed-overview-please-feel-free-to-check-the-tools-that-we">
-              For a more detailed overview, please feel free to check the tools
-              that we
+              Comprehensive design & motion solutions tailored to elevate your brand and captivate your audience.
             </div>
           </div>
         </div>
