@@ -18,6 +18,7 @@ import twitter from './assets/twitter (1).webp'
 import linkedin from './assets/linkedin.webp'
 import github from './assets/github.webp'
 import logo from './assets/Logo.webp'
+import menu from './assets/menu.webp'
 
 import "./Portfolio.css";
 
@@ -28,7 +29,7 @@ export default function Portfolio () {
 
         <img className="logo" src={logo}></img>
 
-        <div className="rectangle-108"></div>
+        <img className="rectangle-108" src={menu}/>
 
         <div className="frame-158">
           <div className="about">About</div>
