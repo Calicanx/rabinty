@@ -216,11 +216,11 @@ export default function Portfolio () {
           <img className="rectangle-92" src={twitter} />
         </Link>
 
-        <Link to='https://linkedin/rabinty'>
+        <Link to='https://www.linkedin.com/in/yitzhak-r-7abb44100/'>
           <img className="rectangle-93" src={linkedin} />
         </Link>
 
-        <Link to='https://linkedin.com/rabinty'>
+        <Link to='https://github.com/Calicanx'>
           <img className="rectangle-94" src={github} />
         </Link>
       </div>
