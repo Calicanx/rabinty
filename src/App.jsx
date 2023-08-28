@@ -1,4 +1,4 @@
-import Portfolio from './portfolio.jsx'
+import Portfolio from './Portfolio.jsx'
 import { Routes, Route } from 'react-router-dom'
 
 function App() {
