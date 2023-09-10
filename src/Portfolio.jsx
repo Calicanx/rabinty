@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 import bg from './assets/denis-pavlovic-NVu_zR3-aQQ-unsplash.webp'
 import react from './assets/science.webp'
@@ -27,6 +29,29 @@ import "./Portfolio.css";
 
 export default function Portfolio () {
 
+  const form = useRef();
+
+
+  const submitForm = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          alert('message sent successfully...');
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    };
+
   return (
     <div className="portfolio">
       <img className="rectangle-102" src={bg} />
@@ -46,9 +71,9 @@ export default function Portfolio () {
             Projects
           </Link>
 
-          <Link className="contact" to='/contact'>
+          <a className="contact" href='#contact'>
             Contact
-          </Link>
+          </a>
         </div>
 
       <div className="hello-i-am-rabin-front-end-developer">
@@ -62,9 +87,9 @@ export default function Portfolio () {
         experiences on the web
       </div>
 
-      <button className="frame-161">
+      <a href='#contact'><button className="frame-161">
        Get in touch
-      </button>
+      </button></a>
 
       <div className="frame-163">
       <div className="skills-tools">&lt;Skills &amp; Tools/&gt;</div>
@@ -212,38 +237,36 @@ export default function Portfolio () {
       </Link>
 
       <div className="frame-182">
-        <Link to='https://twitter.com/chainsaww_man'>
+        <Link to='https://twitter.com/rabinty'>
           <img className="rectangle-92" src={twitter} />
         </Link>
 
-        <Link to='https://www.linkedin.com/in/yitzhak-r-7abb44100/'>
+        <Link to='https://linkedin/rabinty'>
           <img className="rectangle-93" src={linkedin} />
         </Link>
 
-        <Link to='https://github.com/Calicanx'>
+        <Link to='https://linkedin.com/rabinty'>
           <img className="rectangle-94" src={github} />
         </Link>
       </div>
 
-      <div className="frame-185">
+      <form ref={form} onSubmit={submitForm} className="frame-185" id='contact'>
         <div className="frame-184">
           <div className="name">Name</div>
 
-          <input type='text' placeholder='Enter your name' className="rectangle-95"/>
+          <input name='name' type='text' placeholder='Enter your name' className="rectangle-95"/>
 
           <div className="email">Email</div>
 
-          <input type='text' placeholder='Enter your email' className="rectangle-96"/>
+          <input name='email' type='text' placeholder='Enter your email' className="rectangle-96"/>
 
           <div className="message">Message</div>
 
-          <textarea type='text' placeholder='Message' className="rectangle-97"></textarea>
+          <textarea name='message' type='text' placeholder='Message' className="rectangle-97"></textarea>
         </div>
 
-        <button className="frame-183">
-          Submit
-        </button>
-      </div>
+        <input type='submit' name='submit' className="frame-183"/>
+      </form>
 
       <div className="_2023-rabin-all-rights-reserved">
         © 2023 Rabin. All rights reserved.
