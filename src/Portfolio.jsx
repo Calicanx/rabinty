@@ -237,7 +237,7 @@ export default function Portfolio () {
       </Link>
 
       <div className="frame-182">
-        <Link to='https://twitter.com/rabinty'>
+        <Link to='https://twitter.com/chainsaww_man'>
           <img className="rectangle-92" src={twitter} />
         </Link>
 
