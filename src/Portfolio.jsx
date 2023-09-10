@@ -245,7 +245,7 @@ export default function Portfolio () {
           <img className="rectangle-93" src={linkedin} />
         </Link>
 
-        <Link to='https://linkedin.com/rabinty'>
+        <Link to='https://github.com/Calicanx/'>
           <img className="rectangle-94" src={github} />
         </Link>
       </div>
