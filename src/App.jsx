@@ -1,5 +1,6 @@
-import Portfolio from './Portfolio.jsx'
+import Portfolio from './portfolio.jsx'
 import { Routes, Route } from 'react-router-dom'
+import Projects from './Projects.jsx'
 
 function App() {
 
@@ -8,9 +9,7 @@ function App() {
     <Routes>
       <Route path='/' element={< Portfolio/>}/>
       <Route path='/about' element={< Portfolio/>}/>
-      <Route path='/projects' element={< Portfolio/>}/>
-      <Route path='/contact' element={< Portfolio/>}/>
-      <Route path='/car' element={< car/>}/>
+      <Route path='/projects' element={< Projects/>}/>
     </Routes>
     </>
   )
